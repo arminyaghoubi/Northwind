@@ -57,8 +57,8 @@ public partial class Invoice
 
     public string? ProductName { get; set; }
 
-    [Column(TypeName = "NUMERIC")]
-    public double? UnitPrice { get; set; }
+    [Column(TypeName = "money")]
+    public decimal? UnitPrice { get; set; }
 
     public int? Quantity { get; set; }
 
@@ -66,6 +66,6 @@ public partial class Invoice
 
     public double? ExtendedPrice { get; set; }
 
-    [Column(TypeName = "NUMERIC")]
-    public double? Freight { get; set; }
+    [Column(TypeName = "money")]
+    public decimal? Freight { get; set; }
 }

@@ -29,8 +29,8 @@ public partial class OrdersQry
 
     public int? ShipVia { get; set; }
 
-    [Column(TypeName = "NUMERIC")]
-    public int? Freight { get; set; }
+    [Column(TypeName = "money")]
+    public decimal? Freight { get; set; }
 
     public string? ShipName { get; set; }
 
