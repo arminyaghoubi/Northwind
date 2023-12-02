@@ -12,6 +12,7 @@ public partial class Territory
     [Column("TerritoryID")]
     public string TerritoryId { get; set; } = null!;
 
+    [Required]
     public string TerritoryDescription { get; set; } = null!;
 
     [Column("RegionID")]

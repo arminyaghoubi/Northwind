@@ -12,6 +12,7 @@ public partial class Shipper
     [Column("ShipperID")]
     public int ShipperId { get; set; }
 
+    [Required]
     public string CompanyName { get; set; } = null!;
 
     public string? Phone { get; set; }

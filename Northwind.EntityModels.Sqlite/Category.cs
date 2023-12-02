@@ -12,6 +12,9 @@ public partial class Category
     [Column("CategoryID")]
     public int CategoryId { get; set; }
 
+    [Required]
+    [Column(TypeName = "nvarchar (15)")]
+    [StringLength(15)]
     public string? CategoryName { get; set; }
 
     public string? Description { get; set; }

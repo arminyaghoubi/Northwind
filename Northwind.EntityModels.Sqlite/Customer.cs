@@ -9,9 +9,14 @@ namespace Northwind.EntityModels;
 public partial class Customer
 {
     [Key]
-    [Column("CustomerID")]
+    [Column(TypeName = "nchar (5)")]
+    [StringLength(5)]
+    [RegularExpression("[A-Z]{5}")]
     public string CustomerId { get; set; } = null!;
 
+    [Required]
+    [Column(TypeName = "nvarchar (40)")]
+    [StringLength(40)]
     public string? CompanyName { get; set; }
 
     public string? ContactName { get; set; }

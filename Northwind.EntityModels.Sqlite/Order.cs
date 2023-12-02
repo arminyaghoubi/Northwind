@@ -13,6 +13,7 @@ public partial class Order
     public int OrderId { get; set; }
 
     [Column("CustomerID")]
+    [RegularExpression("[A-Z]{5}")]
     public string? CustomerId { get; set; }
 
     [Column("EmployeeID")]
@@ -29,8 +30,8 @@ public partial class Order
 
     public int? ShipVia { get; set; }
 
-    [Column(TypeName = "NUMERIC")]
-    public int? Freight { get; set; }
+    [Column(TypeName = "money")]
+    public decimal? Freight { get; set; }
 
     public string? ShipName { get; set; }
 

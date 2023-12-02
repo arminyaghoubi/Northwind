@@ -12,6 +12,7 @@ public partial class Product
     [Column("ProductID")]
     public int ProductId { get; set; }
 
+    [Required]
     public string ProductName { get; set; } = null!;
 
     [Column("SupplierID")]

@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Northwind.EntityModels.Sqlite\Northwind.EntityModels.Sqlite.csproj" />
+  </ItemGroup>
+
 </Project>
