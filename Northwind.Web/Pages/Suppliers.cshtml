@@ -6,17 +6,25 @@
     <table class="table">
         <thead class="thead-inverse">
             <tr>
+                <th>#</th>
                 <th>Company Name</th>
+                <th>Country</th>
+                <th>Phone</th>
             </tr>
         </thead>
         <tbody>
             @if (Model.Suppliers is not null)
             {
-                @foreach (string name in Model.Suppliers)
+                int counter = 1;
+                @foreach (var supplier in Model.Suppliers)
                 {
                     <tr>
-                        <td>@name</td>
+                        <td>@counter</td>
+                        <td>@supplier.CompanyName</td>
+                        <td>@supplier.Country</td>
+                        <td>@supplier.Phone</td>
                     </tr>
+                    counter++;
                 }
             }
         </tbody>
