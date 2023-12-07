@@ -1,4 +1,8 @@
+using Northwind.DataContext.Sqlite;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddNorthwindContext();
 
 builder.Services.AddRazorPages();
 

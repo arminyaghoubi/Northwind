@@ -14,4 +14,8 @@
     <None Include="Pages\index.cshtml" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Northwind.DataContext.Sqlite\Northwind.DataContext.Sqlite.csproj" />
+  </ItemGroup>
+
 </Project>
