@@ -1,0 +1,31 @@
+﻿@page "/Supplier/Create"
+@model Northwind.Web.Pages.SupplierPages.CreateSupplierModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <h1 class="display-2">
+            New Supplier
+            <a class="btn btn-outline-primary" href="/Suppliers">Supplier List</a>
+        </h1>
+        <div class="card">
+            <div class="card-body">
+                <form method="post">
+                    <div class="mb-3">
+                        <label class="form-label" asp-for="Supplier.CompanyName">Company Name</label>
+                        <input class="form-control" asp-for="Supplier.CompanyName">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" asp-for="Supplier.Country">Country</label>
+                        <input class="form-control" asp-for="Supplier.Country">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" asp-for="Supplier.Phone">Phone</label>
+                        <input class="form-control" asp-for="Supplier.Phone">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

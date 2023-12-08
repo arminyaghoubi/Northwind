@@ -1,8 +1,13 @@
 ﻿@page "/Suppliers"
-@model Northwind.Web.Pages.SuppliersModel
+@using Northwind.Web.Pages.SupplierPages
+@model SuppliersModel
 
 <div class="row">
-    <h1 class="display-2">Suppliers</h1>
+    <h1 class="display-2">
+        Suppliers
+        <a class="btn btn-outline-primary" href="/Supplier/Create">Create Suppiler</a>
+    </h1>
+
     <table class="table">
         <thead class="thead-inverse">
             <tr>

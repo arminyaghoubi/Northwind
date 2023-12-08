@@ -1,8 +1,9 @@
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Northwind.DataContext.Sqlite;
 using Northwind.EntityModels;
 
-namespace Northwind.Web.Pages
+namespace Northwind.Web.Pages.SupplierPages
 {
     public class SuppliersModel : PageModel
     {
