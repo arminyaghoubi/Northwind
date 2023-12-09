@@ -20,6 +20,11 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.Use(async (HttpContext context, Func<Task> next) =>
+{
+    await next();
+});
+
 app.UseHttpsRedirection();
 
 app.Run();

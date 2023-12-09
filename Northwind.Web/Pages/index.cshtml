@@ -11,17 +11,19 @@
     }
 }
 
-<div class="jumbotron">
-    <h1 class="display-3">Welcome to @ViewData["Title"]</h1>
-    <p class="lead">We supply products to our customers.</p>
-    <hr />
-    <p>
-        It's @DayName! Our customers include restaurants, hotels, and cruise
-        lines.
-    </p>
-    <p>
-        <a class="btn btn-primary" href="suppliers">
-            Learn more about our suppliers
-        </a>
-    </p>
-</div>
+@section Styles{
+    <link href="~/site.css" rel="stylesheet" />
+}
+
+<h1 class="display-3">Welcome to @ViewData["Title"]</h1>
+<p class="lead">We supply products to our customers.</p>
+<hr />
+<p>
+    It's @DayName! Our customers include restaurants, hotels, and cruise
+    lines.
+</p>
+<p>
+    <a class="btn btn-outline-info btn-explore" href="suppliers">
+        Learn more about our suppliers
+    </a>
+</p>
